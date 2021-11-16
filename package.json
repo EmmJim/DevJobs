@@ -5,22 +5,36 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./index.js",
-    "start": "concurrently \"npm run dev\" \"npm run watch\" ",
+    "desarrollo": "concurrently \"npm run dev\" \"npm run watch\" ",
+    "start": "node ./index.js",
     "watch": "webpack -w --mode development"
   },
   "author": "Emmanuel Jimenez",
   "license": "ISC",
   "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.5",
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
     "concurrently": "^6.2.2",
+    "connect-flash": "^0.1.1",
     "connect-mongo": "^2.0.3",
     "cookie-parser": "^1.4.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.4",
     "express-session": "^1.17.2",
+    "express-validator": "^5.3.1",
+    "handlebars": "^4.7.7",
+    "http-errors": "^1.8.1",
     "mongoose": "^6.0.7",
+    "multer": "^1.4.3",
+    "nodemailer": "^6.7.0",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
     "shortid": "^2.2.16",
-    "slug": "^5.1.0"
+    "slug": "^5.1.0",
+    "sweetalert2": "^11.1.9"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",

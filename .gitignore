@@ -1,3 +1,5 @@
-node_modules
+node_modules/
 variables.env
+public/uploads/cv/*
+public/uploads/perfiles/*
 .DS_Store

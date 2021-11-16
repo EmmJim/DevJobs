@@ -2,9 +2,7 @@ const Vacante = require('../models/Vacantes');
 
 exports.mostrarTrabajos = async(req, res, next) => {
 
-    const vacantes = Vacante.find({});
-
-    console.log(vacantes)
+    const vacantes = await Vacante.find().lean();
 
     if(!vacantes) return next();
 
@@ -13,6 +11,6 @@ exports.mostrarTrabajos = async(req, res, next) => {
         tagline: 'Encuentra y Publica trabajos para desarrolladores web',
         barra: true, 
         boton: true, 
-        vacantes
+        vacantes: vacantes
     })
 }
